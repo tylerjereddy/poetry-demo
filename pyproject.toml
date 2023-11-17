@@ -6,12 +6,9 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-# do this python pin to avoid issue already
-# fixed on maintenance branch
-# https://github.com/scipy/scipy/issues/19513
-python =">=3.9,<3.13"
-scipy = "^1.10.0"
+python =">=3.9,<3.12"
 numpy = "^1.23.4"
+scipy = { path = "/home/treddy/github_projects/scipy", develop = false}
 
 
 [build-system]
